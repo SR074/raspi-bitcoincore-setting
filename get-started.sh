@@ -21,8 +21,8 @@ echo -n -e "\n" >> ~/.bitcoin/bitcoin.conf
 echo '[test]' >> ~/.bitcoin/bitcoin.conf
 echo -n -e "\n" >> ~/.bitcoin/bitcoin.conf
 echo '[regtest]' >> ~/.bitcoin/bitcoin.conf
-sed -i '$ a datadir=/home/pi/bitcoin-0.21.0/data' ~/.bitcoin/bitcoin.conf
+sed -i '$ a datadir=/home/'$USER'/bitcoin-0.21.0/data' ~/.bitcoin/bitcoin.conf
 
 echo -n -e "\n" >> ~/.bashrc
-echo 'export PATH=$PATH:/home/pi/bitcoin-0.21.0/bin' >> ~/.bashrc
+echo 'export PATH=$PATH:/home/'$USER'/bitcoin-0.21.0/bin' >> ~/.bashrc
 source .bashrc
